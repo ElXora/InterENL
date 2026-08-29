@@ -1,0 +1,26 @@
+{
+  "name": "interenl-store-bot",
+  "version": "1.0.0",
+  "description": "InterENL Store License Management Bot - Discord.js v14 (JavaScript, JSON storage)",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "register": "node deploy-commands.js"
+  },
+  "keywords": [
+    "discord",
+    "discord.js",
+    "license",
+    "interenl-store"
+  ],
+  "author": "InterENL Store",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,75 @@
+/**
+ * triviaQuestions.js
+ * -----------------------------------------------------
+ * Question bank for /trivia. Big enough that with the
+ * no-repeat-until-exhausted picker in progressionManager
+ * (pickTriviaQuestionIndex), a player won't see the same
+ * question twice until every question has come up once.
+ * Add more anytime — nothing else needs to change.
+ * -----------------------------------------------------
+ */
+
+module.exports = [
+    { question: 'What company developed Discord?', options: ['Discord Inc.', 'Slack Technologies', 'Valve', 'Riot Games'], correctIndex: 0 },
+    { question: 'What does "VSC" stand for in this server?', options: ['InterENL Store Coins', 'Very Simple Currency', 'InterENL Server Credits', 'Virtual Store Cash'], correctIndex: 0 },
+    { question: 'In a standard deck of cards, how many total cards are there?', options: ['48', '52', '54', '56'], correctIndex: 1 },
+    { question: 'What is the maximum level of the Battle Pass?', options: ['25', '40', '50', '100'], correctIndex: 2 },
+    { question: 'Which of these is NOT a mini-game in this bot?', options: ['Slots', 'Blackjack', 'Chess', 'Coinflip'], correctIndex: 2 },
+    { question: 'How many sides does a standard die have?', options: ['4', '6', '8', '12'], correctIndex: 1 },
+    { question: 'What does "XP" commonly stand for?', options: ['Extra Points', 'Experience Points', 'Exchange Points', 'Expert Play'], correctIndex: 1 },
+    { question: 'In Blackjack, what is the best possible hand called?', options: ['Royal Flush', 'Natural 21', 'Full House', 'Ace High'], correctIndex: 1 },
+    { question: 'How many days are in a standard "weekly" challenge period?', options: ['5', '6', '7', '10'], correctIndex: 2 },
+    { question: 'What is the capital of France?', options: ['Berlin', 'Madrid', 'Paris', 'Rome'], correctIndex: 2 },
+    { question: 'What is the capital of Japan?', options: ['Seoul', 'Beijing', 'Tokyo', 'Bangkok'], correctIndex: 2 },
+    { question: 'What is the largest planet in our solar system?', options: ['Earth', 'Saturn', 'Jupiter', 'Neptune'], correctIndex: 2 },
+    { question: 'What is the smallest planet in our solar system?', options: ['Mars', 'Mercury', 'Venus', 'Pluto'], correctIndex: 1 },
+    { question: 'How many continents are there on Earth?', options: ['5', '6', '7', '8'], correctIndex: 2 },
+    { question: 'What is the chemical symbol for gold?', options: ['Go', 'Gd', 'Au', 'Ag'], correctIndex: 2 },
+    { question: 'What is the chemical symbol for water?', options: ['H2O', 'O2', 'CO2', 'H2'], correctIndex: 0 },
+    { question: 'How many legs does a spider have?', options: ['6', '8', '10', '12'], correctIndex: 1 },
+    { question: 'What is the tallest mountain in the world?', options: ['K2', 'Kilimanjaro', 'Everest', 'Denali'], correctIndex: 2 },
+    { question: 'What is the longest river in the world?', options: ['Amazon', 'Nile', 'Mississippi', 'Yangtze'], correctIndex: 1 },
+    { question: 'How many minutes are in a full day?', options: ['1140', '1400', '1440', '1500'], correctIndex: 2 },
+    { question: 'How many seconds are in an hour?', options: ['360', '3600', '36000', '600'], correctIndex: 1 },
+    { question: 'What is the freezing point of water in Celsius?', options: ['-1°C', '0°C', '1°C', '32°C'], correctIndex: 1 },
+    { question: 'What gas do plants primarily absorb from the atmosphere?', options: ['Oxygen', 'Nitrogen', 'Carbon Dioxide', 'Hydrogen'], correctIndex: 2 },
+    { question: 'How many bones are in the adult human body?', options: ['186', '206', '226', '246'], correctIndex: 1 },
+    { question: 'What is the fastest land animal?', options: ['Lion', 'Cheetah', 'Horse', 'Gazelle'], correctIndex: 1 },
+    { question: 'Which planet is known as the Red Planet?', options: ['Venus', 'Jupiter', 'Mars', 'Saturn'], correctIndex: 2 },
+    { question: 'What is the largest ocean on Earth?', options: ['Atlantic', 'Indian', 'Arctic', 'Pacific'], correctIndex: 3 },
+    { question: 'How many colors are in a rainbow?', options: ['5', '6', '7', '8'], correctIndex: 2 },
+    { question: 'What is the currency of Japan?', options: ['Won', 'Yuan', 'Yen', 'Ringgit'], correctIndex: 2 },
+    { question: 'What is the national language of Brazil?', options: ['Spanish', 'Portuguese', 'French', 'Italian'], correctIndex: 1 },
+    { question: 'Which video game franchise features "Master Chief"?', options: ['Gears of War', 'Halo', 'Call of Duty', 'Destiny'], correctIndex: 1 },
+    { question: 'What does "CPU" stand for?', options: ['Central Process Unit', 'Central Processing Unit', 'Computer Personal Unit', 'Core Processing Unit'], correctIndex: 1 },
+    { question: 'What does "RAM" stand for?', options: ['Random Access Memory', 'Read Access Memory', 'Rapid Access Module', 'Random Allocation Memory'], correctIndex: 0 },
+    { question: 'What programming language is Discord.js built on?', options: ['Python', 'Java', 'JavaScript', 'C++'], correctIndex: 2 },
+    { question: 'How many players are on a standard soccer team on the field?', options: ['9', '10', '11', '12'], correctIndex: 2 },
+    { question: 'In chess, how many squares are on the board?', options: ['32', '48', '64', '100'], correctIndex: 2 },
+    { question: 'What is the hardest natural substance on Earth?', options: ['Gold', 'Iron', 'Diamond', 'Quartz'], correctIndex: 2 },
+    { question: 'How many strings does a standard guitar have?', options: ['4', '5', '6', '7'], correctIndex: 2 },
+    { question: 'What is the main ingredient in guacamole?', options: ['Tomato', 'Avocado', 'Onion', 'Pepper'], correctIndex: 1 },
+    { question: 'What does "www" stand for?', options: ['World Wide Web', 'World Web Wide', 'Web World Wide', 'Wide World Web'], correctIndex: 0 },
+    { question: 'How many time zones does Russia span?', options: ['5', '7', '9', '11'], correctIndex: 3 },
+    { question: 'What is the study of stars and planets called?', options: ['Biology', 'Astronomy', 'Geology', 'Meteorology'], correctIndex: 1 },
+    { question: 'Which element has the atomic number 1?', options: ['Helium', 'Hydrogen', 'Oxygen', 'Carbon'], correctIndex: 1 },
+    { question: 'What is the largest mammal in the world?', options: ['Elephant', 'Blue Whale', 'Giraffe', 'Hippopotamus'], correctIndex: 1 },
+    { question: 'How many hearts does an octopus have?', options: ['1', '2', '3', '4'], correctIndex: 2 },
+    { question: 'What is the most spoken language in the world by native speakers?', options: ['English', 'Spanish', 'Mandarin Chinese', 'Hindi'], correctIndex: 2 },
+    { question: 'What is the smallest country in the world by area?', options: ['Monaco', 'San Marino', 'Vatican City', 'Liechtenstein'], correctIndex: 2 },
+    { question: 'Which sport is known as "the beautiful game"?', options: ['Basketball', 'Soccer', 'Tennis', 'Cricket'], correctIndex: 1 },
+    { question: 'What is the boiling point of water in Celsius at sea level?', options: ['90°C', '100°C', '110°C', '120°C'], correctIndex: 1 },
+    { question: 'How many players are on a standard basketball team on the court?', options: ['4', '5', '6', '7'], correctIndex: 1 },
+    { question: 'What is the primary language spoken in Mexico?', options: ['Portuguese', 'Spanish', 'French', 'Italian'], correctIndex: 1 },
+    { question: 'Which planet has the most moons?', options: ['Jupiter', 'Saturn', 'Uranus', 'Neptune'], correctIndex: 1 },
+    { question: 'What is a group of lions called?', options: ['A pack', 'A pride', 'A herd', 'A flock'], correctIndex: 1 },
+    { question: 'What does "HTML" stand for?', options: ['Hyper Trainer Marking Language', 'HyperText Markup Language', 'Hyper Text Making Language', 'HyperText Marketing Language'], correctIndex: 1 },
+    { question: 'What color do you get by mixing blue and yellow?', options: ['Purple', 'Orange', 'Green', 'Brown'], correctIndex: 2 },
+    { question: 'How many players are on a standard volleyball team on the court?', options: ['5', '6', '7', '8'], correctIndex: 1 },
+    { question: 'What is the tallest animal in the world?', options: ['Elephant', 'Giraffe', 'Camel', 'Ostrich'], correctIndex: 1 },
+    { question: 'Which country is famous for inventing pizza?', options: ['France', 'Spain', 'Italy', 'Greece'], correctIndex: 2 },
+    { question: 'What is the main gas found in the air we breathe?', options: ['Oxygen', 'Carbon Dioxide', 'Nitrogen', 'Hydrogen'], correctIndex: 2 },
+    { question: 'How many hexagons are on a standard soccer ball?', options: ['10', '12', '16', '20'], correctIndex: 1 },
+    { question: 'What is the term for a baby kangaroo?', options: ['Cub', 'Joey', 'Kid', 'Pup'], correctIndex: 1 },
+    { question: 'What year did Discord first launch?', options: ['2013', '2015', '2017', '2019'], correctIndex: 1 }
+];

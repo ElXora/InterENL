@@ -1,0 +1,288 @@
+{
+  "botName": "InterENL Store License Bot",
+  "ownerID": "1146698011641118761",
+  "footer": "InterENL Store Licensing System",
+  "thumbnail": "https://cdn.discordapp.com/icons/1472601008998846576/99589183925d96731d0d6180d5de12b0.webp?size=2048",
+
+  "colors": {
+    "primary": 2450411,
+    "success": 3900150,
+    "error": 16007006,
+    "warning": 16498468,
+    "info": 16777215,
+    "black": 2300714
+  },
+
+  "licensePlans": {
+    "3 Days": 3,
+    "7 Days": 7,
+    "14 Days": 14,
+    "30 Days": 30,
+    "Lifetime": null
+  },
+
+  "expirationCheckIntervalMs": 60000,
+
+  "licenseLeakProtection": true,
+  "action": "suspend",
+  "deleteMessage": true,
+  "notifyAdmins": true,
+  "dmUser": true,
+  "ignoreAdminsInLeakScan": false,
+
+  "announceChannelId": "1528853371757269014",
+
+  "emojis": {
+    "logo": "interenlstorelogo",
+    "cart": "cart",
+    "bank": "bank",
+    "bankcard": "bankcard",
+    "gpay": "gpay",
+    "admin": "admin",
+    "bot": "bot",
+    "verify": "verify",
+    "hacken": "hacken",
+    "fire": "fire",
+    "heart": "heart",
+    "cooldown": "cooldown",
+    "globe": "globe",
+    "dnd": "dnd",
+    "discord": "Discord",
+    "devs": "devs",
+    "complaints": "complaints",
+    "crown": "Blue_Crown",
+    "partner": "22880partner",
+    "cmd": "cmd",
+    "booster": "booster",
+    "load": "load",
+    "settings": "29561settings",
+    "carkey": "27029carkey",
+    "shield": "CManegerIcon"
+  },
+
+  "moderation": {
+    "enabled": true,
+    "muteRoleName": "Muted",
+    "badWordMuteMinutes": 60,
+    "ignoreStaffInAutomod": true,
+    "spam": {
+      "enabled": true,
+      "messageThreshold": 5,
+      "intervalSeconds": 5,
+      "muteMinutes": 60,
+      "deleteMessages": true
+    },
+    "links": {
+      "enabled": true,
+      "muteMinutes": 60,
+      "deleteMessage": true,
+      "allowedDomains": ["discord.com", "discord.gg", "tenor.com", "giphy.com", "youtube.com", "youtu.be"]
+    }
+  },
+
+  "antiNuke": {
+    "enabled": true,
+    "punishment": "ban",
+    "maxChannelDeletesPerMinute": 3,
+    "maxRoleDeletesPerMinute": 3,
+    "maxBansPerMinute": 3,
+    "maxKicksPerMinute": 3,
+    "maxWebhookCreatesPerMinute": 3,
+    "blockDangerousPermissionGrants": true,
+    "whitelistedIds": ["1146698011641118761"]
+  },
+
+  "presence": {
+    "status": "online",
+    "rotateSeconds": 20,
+    "activities": [
+      { "type": "watching", "text": "InterENL Store | /help" },
+      { "type": "watching", "text": "over the community" },
+      { "type": "playing", "text": "/shop | Buy a license" },
+      { "type": "competing", "text": "the leaderboard | /leaderboard" },
+      { "type": "listening", "text": "/rank for your level" }
+    ]
+  },
+
+  "verify": {
+    "enabled": true
+  },
+
+  "tickets": {
+    "enabled": true,
+    "panelTitle": ":cart: InterENL Store Support",
+    "panelDescription": "Need help, want to partner with us, or have a question about the shop? Pick a category below and we'll open a private ticket just for you.",
+    "categories": [
+      { "id": "support", "label": "Support", "emoji": "🎫", "customEmoji": "cmd", "description": "General help & technical support" },
+      { "id": "partnership", "label": "Partnership", "emoji": "🤝", "customEmoji": "22880partner", "description": "Partnership & collaboration inquiries" },
+      { "id": "shop", "label": "Shop", "emoji": "🛒", "customEmoji": "cart", "description": "Purchases, orders & billing questions" }
+    ],
+    "staffRoleName": "🌟┃Staff",
+    "ownerRoleName": "🌟┃Owner",
+    "autoArchiveMinutes": 10080,
+    "closeDelaySeconds": 5
+  },
+
+  "welcome": {
+    "enabled": true,
+    "channelId": "",
+    "message": "Welcome %username% to **InterENL Store**! :interenlstorelogo:",
+    "description": "We're glad to have you here, {member}!\n\n:cart: Check out the shop\n:cmd: Need a hand? Open a support ticket\n:verify: Grab your roles and say hi",
+    "showMemberCount": true
+  },
+
+  "economy": {
+    "enabled": true,
+    "currencyName": "VSC",
+    "emojiName": "interenlstorelogo",
+    "footer": "InterENL Store Economy",
+
+    "colors": {
+      "primary": 3900150,
+      "black": 2300714,
+      "white": 16777215
+    },
+
+    "enableLootDrops": true,
+    "enableDaily": true,
+    "enableWork": true,
+    "enableLicenses": true,
+
+    "lootMinIntervalMinutes": 60,
+    "lootMaxIntervalMinutes": 60,
+    "lootExpireSeconds": 60,
+
+    "dailyBaseReward": 100,
+    "dailyStreakIncrement": 25,
+    "dailyStreakRewardCap": 300,
+    "dailyRewardVariance": 10,
+
+    "workCooldownHours": 2,
+    "workMinReward": 50,
+    "workMaxReward": 175,
+    "jobs": [
+      "Developer",
+      "Discord Bot Developer",
+      "Graphic Designer",
+      "Web Designer",
+      "Panel Developer",
+      "UI Designer",
+      "Theme Designer",
+      "Community Manager"
+    ],
+
+    "_rewardTierComment": "Loot drop rewards are rolled independently from rarest to most common (each tier gets its own chance check); if none hit, the guaranteedFallback below is always given. This is the only way to make the overlapping percentages in a spec like '10 Coins: 80-90%, 45 Coins: 40-45%' internally consistent, since they can't all be slices of one 100% pie.",
+    "rewardTiers": [
+      { "id": "license30", "type": "license", "plan": "30 Days", "label": "30 Day License", "minChancePercent": 0.005, "maxChancePercent": 0.01 },
+      { "id": "license7", "type": "license", "plan": "7 Days", "label": "7 Day License", "minChancePercent": 0.05, "maxChancePercent": 0.1 },
+      { "id": "license3", "type": "license", "plan": "3 Days", "label": "3 Day Trial License", "minChancePercent": 0.5, "maxChancePercent": 1 },
+      { "id": "coins350", "type": "coins", "amount": 350, "label": "350 VSC", "minChancePercent": 3, "maxChancePercent": 5 },
+      { "id": "coins200", "type": "coins", "amount": 200, "label": "200 VSC", "minChancePercent": 7, "maxChancePercent": 10 },
+      { "id": "coins150", "type": "coins", "amount": 150, "label": "150 VSC", "minChancePercent": 15, "maxChancePercent": 20 },
+      { "id": "coins45", "type": "coins", "amount": 45, "label": "45 VSC", "minChancePercent": 40, "maxChancePercent": 45 }
+    ],
+    "guaranteedFallback": { "type": "coins", "amount": 10, "label": "10 VSC" }
+  },
+
+  "leveling": {
+    "enabled": true,
+    "xpPerMessage": 2,
+    "xpCooldownSeconds": 5,
+    "levelUpChannelId": "",
+    "xpFormula": { "base": 100, "growth": 1.12 },
+    "levelUpCoins": 25,
+    "milestoneEveryLevels": 25,
+    "milestoneBonusCoins": 500
+  },
+
+  "battlePass": {
+    "enabled": true,
+    "maxLevel": 50,
+    "xpFormula": { "base": 150, "growth": 1.055 },
+    "tiers": [
+      { "minLevel": 1, "maxLevel": 10, "coinsMin": 50, "coinsMax": 150, "label": "Rookie Track" },
+      { "minLevel": 11, "maxLevel": 20, "coinsMin": 150, "coinsMax": 350, "label": "Rising Star Track" },
+      { "minLevel": 21, "maxLevel": 30, "coinsMin": 350, "coinsMax": 700, "label": "Elite Track" },
+      { "minLevel": 31, "maxLevel": 40, "coinsMin": 700, "coinsMax": 1500, "label": "Rare Track" },
+      { "minLevel": 41, "maxLevel": 49, "coinsMin": 1500, "coinsMax": 3000, "label": "Mythic Track" }
+    ],
+    "milestoneRewards": {
+      "5": { "coins": 500, "title": "Getting Started", "label": "Bonus 500 VSC" },
+      "10": { "coins": 1000, "title": "Rookie Graduate", "label": "1,000 VSC + Rookie Badge" },
+      "20": { "coins": 2500, "title": "Rising Star", "label": "2,500 VSC + Exclusive Title" },
+      "25": { "coins": 5000, "title": "Halfway Hero", "label": "5,000 VSC + Special Title" },
+      "30": { "coins": 5000, "title": "Elite Member", "label": "5,000 VSC + Elite Title" },
+      "40": { "coins": 10000, "title": "Rare Legend", "label": "10,000 VSC + Rare Title" },
+      "49": { "coins": 15000, "title": "Almost Legendary", "label": "15,000 VSC" },
+      "50": { "coins": 50000, "title": "Battle Pass Champion", "label": "👑 BATTLE PASS CHAMPION — 50,000 VSC + Permanent Champion Title", "legendary": true }
+    }
+  },
+
+  "games": {
+    "enabled": true,
+    "cooldownSeconds": 5,
+    "coinflip": { "minBet": 10, "maxBet": 10000, "winMultiplier": 1.95 },
+    "dice": { "minBet": 10, "maxBet": 10000, "winMultiplier": 1.9 },
+    "slots": { "minBet": 10, "maxBet": 5000 },
+    "blackjack": { "minBet": 10, "maxBet": 5000, "blackjackMultiplier": 2.5, "winMultiplier": 2 },
+    "trivia": { "rewardCoins": 150, "rewardXp": 20, "timeSeconds": 20, "dailyLimit": 5 },
+    "guessnumber": { "rewardCoins": 300, "rewardXp": 25, "min": 1, "max": 50 }
+  },
+
+  "challenges": {
+    "enabled": true,
+    "dailyCount": 3,
+    "weeklyCount": 2,
+    "pool": [
+      { "id": "daily_messages_50", "scope": "daily", "statKey": "messages", "target": 50, "label": "Send 50 messages", "emoji": "💬", "xpReward": 200, "coinReward": 500 },
+      { "id": "daily_games_3", "scope": "daily", "statKey": "gamesWon", "target": 3, "label": "Win 3 mini-games", "emoji": "🎮", "xpReward": 250, "coinReward": 750 },
+      { "id": "daily_coins_2000", "scope": "daily", "statKey": "coinsEarned", "target": 2000, "label": "Earn 2,000 VSC", "emoji": "💰", "xpReward": 150, "coinReward": 400 },
+      { "id": "daily_giveaway_1", "scope": "daily", "statKey": "giveawayEntries", "target": 1, "label": "Enter a giveaway", "emoji": "🎁", "xpReward": 100, "coinReward": 250 },
+      { "id": "daily_xp_100", "scope": "daily", "statKey": "xpEarned", "target": 100, "label": "Earn 100 XP", "emoji": "⭐", "xpReward": 50, "coinReward": 300 },
+      { "id": "weekly_messages_300", "scope": "weekly", "statKey": "messages", "target": 300, "label": "Send 300 messages", "emoji": "💬", "xpReward": 1000, "coinReward": 3000 },
+      { "id": "weekly_games_20", "scope": "weekly", "statKey": "gamesWon", "target": 20, "label": "Win 20 mini-games", "emoji": "🎮", "xpReward": 1200, "coinReward": 4000 },
+      { "id": "weekly_coins_10000", "scope": "weekly", "statKey": "coinsEarned", "target": 10000, "label": "Earn 10,000 VSC", "emoji": "💰", "xpReward": 800, "coinReward": 2500 },
+      { "id": "weekly_achievement_1", "scope": "weekly", "statKey": "achievementsUnlocked", "target": 1, "label": "Unlock an achievement", "emoji": "🏆", "xpReward": 1000, "coinReward": 3500 }
+    ]
+  },
+
+  "giveaways": {
+    "enabled": true,
+    "logChannelId": "",
+    "defaultWinnerCount": 1
+  },
+
+  "shop": {
+    "enabled": true,
+    "plans": {
+      "3 Days": 25000,
+      "7 Days": 50000,
+      "14 Days": 75000,
+      "30 Days": 100000,
+      "Lifetime": 200000
+    }
+  },
+
+  "invites": {
+    "enabled": true,
+    "fakeAccountAgeDays": 7
+  },
+
+  "achievements": [
+    { "id": "first_loot", "name": "First Loot", "emoji": "🏆", "description": "Claim your first loot drop.", "rewardCoins": 100 },
+    { "id": "ten_loot", "name": "10 Loot Drops", "emoji": "🏆", "description": "Claim 10 loot drops.", "rewardCoins": 500 },
+    { "id": "thousand_coins", "name": "1000 Coins", "emoji": "💰", "description": "Earn 1,000 total VSC.", "rewardCoins": 200 },
+    { "id": "first_license", "name": "First License Win", "emoji": "🔑", "description": "Win your first license from a loot drop.", "rewardCoins": 500 },
+    { "id": "ten_streak", "name": "10 Daily Streak", "emoji": "🔥", "description": "Reach a 10-day daily streak.", "rewardCoins": 750 },
+    { "id": "rich", "name": "Rich", "emoji": "💎", "description": "Hold 10,000 VSC at once.", "rewardCoins": 1000 },
+    { "id": "millionaire", "name": "Millionaire", "emoji": "👑", "description": "Hold 1,000,000 VSC at once.", "rewardCoins": 10000 },
+    { "id": "chatterbox", "name": "Chatterbox", "emoji": "💬", "description": "Send 1,000 messages.", "rewardXp": 500 },
+    { "id": "dedicated", "name": "Dedicated", "emoji": "🔥", "description": "Maintain a 7-day activity streak.", "rewardXp": 750, "rewardCoins": 500 },
+    { "id": "gamer", "name": "Gamer", "emoji": "🎮", "description": "Win 50 mini-games.", "rewardXp": 1000, "rewardCoins": 1000 },
+    { "id": "grinder", "name": "Grinder", "emoji": "🎟️", "description": "Reach Battle Pass Level 50.", "rewardCoins": 2000 },
+    { "id": "completionist", "name": "Completionist", "emoji": "🏆", "description": "Unlock every other achievement.", "rewardCoins": 25000, "rewardXp": 5000 },
+    { "id": "high_roller", "name": "High Roller", "emoji": "🎰", "description": "Win 1,000+ VSC in a single mini-game payout.", "rewardCoins": 1000, "hidden": true },
+    { "id": "giveaway_champion", "name": "Giveaway Champion", "emoji": "🎁", "description": "Win a server giveaway.", "rewardCoins": 1000, "hidden": true },
+    { "id": "blackjack_natural", "name": "Natural Talent", "emoji": "🃏", "description": "Win a Blackjack hand with a natural 21.", "rewardCoins": 500, "hidden": true }
+  ]
+}
